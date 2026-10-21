@@ -15,18 +15,8 @@ is hard-coded.
 4. **Play** — UPnP/SOAP on `:1400` → `SetAVTransportURI` + `Play`;
    Sonos pulls the file and plays it.
 
-```
-Your computer                         Sonos
-     |                                   |
-     |  SOAP :1400  SetAVTransportURI    |
-     |---------------------------------->|
-     |  SOAP :1400  Play                 |
-     |---------------------------------->|
-     |      HTTP GET /rasa-sayang.wav    |
-     |<----------------------------------|
-     |      audio/wav bytes              |
-     |---------------------------------->|  speakers
-```
+Deeper walkthrough (state diagrams, protocol ownership, Spotify takeover,
+links): **[docs/README.md](docs/README.md)**.
 
 ## Setup
 
