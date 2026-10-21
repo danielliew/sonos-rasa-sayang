@@ -1,0 +1,15 @@
+[project]
+name = "sonos-rasa-sayang"
+version = "0.1.0"
+description = "Rasa Sayang probe/player for Sonos (synthesize + UPnP play)"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+sonos-rasa-sayang = "sonos_rasa_sayang.cli:main"
+beep = "sonos_rasa_sayang.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
